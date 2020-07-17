@@ -4,6 +4,9 @@ metadata:
   name: paulespinoks 
 spec:
   replicas: 1
+    selector:
+      matchLabels:
+        name: pespino
   template:
     metadata:
       labels:
