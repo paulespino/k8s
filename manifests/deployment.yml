@@ -1,19 +1,19 @@
 apiVersion : apps/v1
 kind: Deployment
 metadata:
-  name: paulespinoks 
+  name: paulespinoks
 spec:
   replicas: 1
-   selector:
+  selector:
     matchLabels:
-     name: pespino
+      name: pespino
   template:
     metadata:
       labels:
-        app: paulespinoks 
+        app: paulespinoks
     spec:
       containers:
-        - name: paulespinoks 
+        - name: paulespinoks
           image: mycontainerregistryespino.azurecr.io/paulespinoks
           ports:
           - containerPort: 8080
