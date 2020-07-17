@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: paulespinoks 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: paulespinoks 
+    spec:
+      containers:
+        - name: paulespinoks 
+          image: mycontainerregistryespino.azurecr.io/paulespinoks
+          ports:
+          - containerPort: 8080
